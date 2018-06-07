@@ -38,11 +38,11 @@ public class PointTest {
         Point p_10 = new Point(-1,0);
         Point p0_1 = new Point(0,-1);
         Point p11 = new Point(1,1);
-        Assert.assertEquals(p_1_1.distance(p00),1.0);
-        Assert.assertEquals(p_1_1.distance(p10),Math.sqrt(3));
+        Assert.assertEquals(p_1_1.distance(p00),Math.sqrt(2));
+        Assert.assertEquals(p_1_1.distance(p10),Math.sqrt(5));
         Assert.assertEquals(p_1_1.distance(p0_1),1.0);
         Assert.assertEquals(p_1_1.distance(p_10),1.0);
-        Assert.assertEquals(p_1_1.distance(p01),Math.sqrt(3));
-        Assert.assertEquals(p1_1.distance(p11),2.0);
+        Assert.assertEquals(p_1_1.distance(p01),Math.sqrt(5));
+        Assert.assertEquals(p_1_1.distance(p11), Math.sqrt(8));
     }
 }

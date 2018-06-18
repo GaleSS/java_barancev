@@ -29,7 +29,7 @@ public class TestBase {
     }
 
     private void login(String username, String password) {
-        wd.get("http://localhost/addressbook/group.php");
+        wd.get("http://localhost/addressbook/");
         wd.findElement(By.name("user")).click();
         wd.findElement(By.name("user")).clear();
         wd.findElement(By.name("user")).sendKeys(username);
@@ -43,6 +43,10 @@ public class TestBase {
         wd.findElement(By.name("submit")).click();
     }
 
+    protected void submitContactCreation() {
+        wd.findElement(By.name("submit")).click();
+    }
+
     protected void fillAllFields(GroupData groupData) {
         wd.findElement(By.name("group_name")).click();
         wd.findElement(By.name("group_name")).clear();
@@ -53,6 +57,22 @@ public class TestBase {
         wd.findElement(By.name("group_footer")).click();
         wd.findElement(By.name("group_footer")).clear();
         wd.findElement(By.name("group_footer")).sendKeys(groupData.getFooter());
+    }
+
+    protected void fillAllContactFields(ContactData contactData) {
+        wd.findElement(By.name("firstname")).click();
+        wd.findElement(By.name("firstname")).clear();
+        wd.findElement(By.name("firstname")).sendKeys(contactData.getName());
+        wd.findElement(By.name("middlename")).click();
+        wd.findElement(By.name("middlename")).clear();
+        wd.findElement(By.name("middlename")).sendKeys(contactData.getMiddlename());
+        wd.findElement(By.name("lastname")).click();
+        wd.findElement(By.name("lastname")).clear();
+        wd.findElement(By.name("lastname")).sendKeys(contactData.getLastname());
+    }
+
+    protected void initNewContact() {
+        wd.findElement(By.xpath("/html/body/div/div[3]/ul/li[2]/a")).click();
     }
 
     protected void initNewGroup() {

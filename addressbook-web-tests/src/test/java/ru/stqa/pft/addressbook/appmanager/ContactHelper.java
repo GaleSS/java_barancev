@@ -11,8 +11,9 @@ public class ContactHelper extends HelperBase
         super(wd);
     }
 
-    public void submitContactCreation() {
-        wd.findElement(By.name("submit")).click();
+    public void submitContactCreation() {click(By.name("submit")); }
+    public void updateContact() {
+        click(By.name("update"));
     }
 
     public void fillAllContactFields(ContactData contactData) {
@@ -31,6 +32,8 @@ public class ContactHelper extends HelperBase
 
 
     public void confirmDeletionYes() { wd.switchTo().alert().accept(); }
-    public void confirmDeletionТщ() { wd.switchTo().alert().dismiss(); }
+    public void confirmDeletionNo() { wd.switchTo().alert().dismiss(); }
+
+    public void editContact() {click(By.xpath("/html/body/div[1]/div[4]/form[2]/table/tbody/tr[2]/td[8]/a/img"));}
 }
 

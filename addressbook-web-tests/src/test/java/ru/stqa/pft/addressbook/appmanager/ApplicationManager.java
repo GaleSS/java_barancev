@@ -1,13 +1,22 @@
 package ru.stqa.pft.addressbook.appmanager;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.BrowserType;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
+import static org.openqa.selenium.remote.BrowserType.*;
 
 public class ApplicationManager {
 
-    private FirefoxDriver wd;
+    public ApplicationManager (String browser) {
+        this.browser = browser;
+    }
 
+    private WebDriver wd;
+    private String browser;
     private NavigationHelper navigationHelper;
     private SessionHelper sessionHelper;
     private ContactHelper contactHelper;
@@ -15,7 +24,17 @@ public class ApplicationManager {
 
     public void init() {
         //System.setProperty("webdriver.gecko.driver", "E:\\\\Tools\\geckodriver\\geckodriver.exe");
-        wd = new FirefoxDriver();
+        if (browser.equals(FIREFOX))
+        {
+            wd = new FirefoxDriver();
+        } else if (browser.equals(CHROME))
+        {
+            wd = new ChromeDriver();
+        } else if (browser.equals(EDGE))
+        {
+            wd = new EdgeDriver();
+        }
+
         wd.manage().timeouts().implicitlyWait(10, SECONDS);
         groupHelper = new GroupHelper(wd);
         contactHelper = new ContactHelper(wd);

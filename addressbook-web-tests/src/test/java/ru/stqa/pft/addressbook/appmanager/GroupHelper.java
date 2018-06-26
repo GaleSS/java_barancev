@@ -41,4 +41,10 @@ public class GroupHelper  extends HelperBase{
     public void selectGroup() {
         click(By.name("selected[]"));
     }
+
+    public void createGroup(GroupData groupData) {
+        initNewGroup();
+        fillAllFields(groupData);
+        submitGroupCreation();
+    }
 }

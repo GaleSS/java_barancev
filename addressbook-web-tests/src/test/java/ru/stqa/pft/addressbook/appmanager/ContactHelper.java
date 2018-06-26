@@ -47,5 +47,11 @@ public class ContactHelper extends HelperBase
     public void confirmDeletionNo() { wd.switchTo().alert().dismiss(); }
 
     public void editContact() {click(By.xpath("/html/body/div[1]/div[4]/form[2]/table/tbody/tr[2]/td[8]/a/img"));}
+
+    public void createContact(ContactData contactData) {
+        initNewContact();
+        fillAllContactFields(contactData, true);
+        submitContactCreation();
+    }
 }
 

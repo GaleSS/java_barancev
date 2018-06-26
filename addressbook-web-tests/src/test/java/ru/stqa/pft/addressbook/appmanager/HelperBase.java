@@ -47,4 +47,8 @@ public class HelperBase {
             return false;
         }
     }
+
+    public int elementCount(By locator) {
+        return wd.findElements(locator).size();
+    }
 }

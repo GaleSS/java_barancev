@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.tests;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.GroupData;
 import org.testng.annotations.Test;
 
@@ -13,12 +14,15 @@ public class GroupModificationTest extends TestBase
         {
             app.getGroupHelper().createGroup(new GroupData("formodify", "formodify", "formodify"));
         }
+        int before =  app.getGroupHelper().elementCount(By.name("selected[]"));
         app.getNavigationHelper().goToGroupPage();
         app.getGroupHelper().selectGroup();
         app.getGroupHelper().modifySelectedGroups();
         app.getGroupHelper().fillAllFields(new GroupData("test45modified", "test45modified", "test45modified"));
         app.getGroupHelper().updateGroup();
         app.getNavigationHelper().goToGroupPage();
+        int after =  app.getGroupHelper().elementCount(By.name("selected[]"));
+        Assert.assertEquals(before, after);
     }
 
 }

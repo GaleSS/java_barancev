@@ -38,7 +38,9 @@ public class ContactHelper extends HelperBase
         click(By.xpath("/html/body/div/div[3]/ul/li[2]/a"));
     }
 
-    public void selectContact() {click(By.name("selected[]"));}
+    public void selectContact(int index) {
+        wd.findElements(By.name("selected[]")).get(index).click();
+    }
 
     public void deleteSelectedContact() {click(By.xpath("/html/body/div[1]/div[4]/form[2]/div[2]/input"));}
 

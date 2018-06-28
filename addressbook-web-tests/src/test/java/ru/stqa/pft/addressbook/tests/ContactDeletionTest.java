@@ -11,11 +11,11 @@ public class ContactDeletionTest extends TestBase {
     public void testContactDeletion() {
         if (! app.getContactHelper().isElementPresent(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img")))
         {
-            app.getContactHelper().createContact(new ContactData("fordeletion", "fordeletion", "fordeletion", "test45modified"));
+            app.getContactHelper().createContact(new ContactData("fordeletion", "fordeletion", "fordeletion", null));
         }
-        int before =  app.getGroupHelper().elementCount(By.name("selected[]"));
         app.getNavigationHelper().goToMainPage();
-        app.getContactHelper().selectContact();
+        int before =  app.getGroupHelper().elementCount(By.name("selected[]"));
+        app.getContactHelper().selectContact(before - 1);
         app.getContactHelper().deleteSelectedContact();
         app.getContactHelper().confirmDeletionYes();
         app.getNavigationHelper().goToMainPage();

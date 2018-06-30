@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60af4db8-6eba-4004-8118-40df8778be65" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/ContactDeletionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/ContactDeletionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupDeletionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupDeletionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/src/test/java/ru/stqa/pft/sandbox/Crossword.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/src/test/java/ru/stqa/pft/sandbox/Crossword.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/addressbook-web-tests/build/" />
     <ignored path="$PROJECT_DIR$/Sandbox/.gradle/" />
@@ -94,14 +89,10 @@
       <file leaf-file-name="Crossword.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sandbox/src/test/java/ru/stqa/pft/sandbox/Crossword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+            <state relative-caret-position="1037">
+              <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2059#2060#0" expanded="true" />
-                <element signature="e#2099#2100#0" expanded="true" />
-                <element signature="e#2365#2366#0" expanded="true" />
-                <element signature="e#2471#2472#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,8 +156,8 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$/Sandbox" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
-        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/Sandbox" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -529,11 +520,11 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/Sandbox" value="4584392891005" />
+        <entry key="$PROJECT_DIR$/Sandbox" value="4588383809702" />
         <entry key="$PROJECT_DIR$/Sandbox/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/Sandbox/build.gradle" value="3737335831" />
         <entry key="$PROJECT_DIR$/Sandbox/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
-        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="4585730615249" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="4587950260413" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/build.gradle" value="1446792437" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
@@ -931,7 +922,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -973,8 +964,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1238,7 +1229,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1249,25 +1240,25 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32741398" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3267974" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16151386" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16130953" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32026145" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955604" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32026145" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -1429,12 +1420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-          <folding>
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1456,9 +1441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1544,14 +1526,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sandbox/src/test/java/ru/stqa/pft/sandbox/Crossword.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        <state relative-caret-position="1037">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
-            <element signature="e#2365#2366#0" expanded="true" />
-            <element signature="e#2471#2472#0" expanded="true" />
           </folding>
         </state>
       </provider>

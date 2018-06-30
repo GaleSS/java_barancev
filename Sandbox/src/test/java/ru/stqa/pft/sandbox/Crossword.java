@@ -37,26 +37,62 @@ same - (1, 1) - (4, 1)
         ArrayList<Word> result = new ArrayList<>();
         int hor = crossword[0].length;
         int ver = crossword.length;
+        int[] cords = new int[2];
+        boolean wordFound;
+        int [][] steps = new int [][]{{-1,0},{-1,1},{0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1}};
+
 
         for (String word : words)
         {
             int firstChar = word.charAt(0);
 
-            for (int j = 0; j < hor; j++)
+            for (int y = 0; y < ver; y++)
             {
-                for (int k = 0; k < ver; k++)
+                wordFound = false;
+                for (int x = 0; x < hor; x++)
                 {
-                    if (firstChar == crossword[j][k]){
-
-                        /*vertical left check*/
-                        while (nextFound || )
-
+                   if (firstChar == crossword[y][x]){
+                       for (int[] step : steps)
+                       {
+                        cords = wordCheck(crossword,word,y,x,step[0],step[1]);
+                        if (cords[0] != -1)
+                        {
+                            Word resultWord = new Word(word);
+                            resultWord.setStartPoint(x,y);
+                            resultWord.setEndPoint(cords[0],cords[1]);
+                            result.add(resultWord);
+                            wordFound = true;
+                            break;
+                        }
+                       }
                     }
+                    if (wordFound){break;}
                 }
+                if (wordFound){break;}
             }
         }
-
         return result;
+    }
+
+    private static int[] wordCheck (int[][] crossword, String word, int startY, int startX, int stepY, int stepX)
+    {
+        int[] cords = new int[2];
+        for (int charIndex = 1;charIndex < word.length()-1;charIndex++)
+        {
+            startY = startY + stepY;
+            startX = startX + stepX;
+            if (startX < 0 || startX > crossword[0].length-1  ||
+                    startY < 0 || startY > crossword.length-1 ||
+                    crossword[startY][startX] != word.charAt(charIndex))
+            {
+                cords [0] = -1;
+                cords [1] = -1;
+                return cords;
+            }
+        }
+        cords [0] = startX+stepX;
+        cords [1] = startY+stepY;
+        return cords;
     }
 
     public static class Word {

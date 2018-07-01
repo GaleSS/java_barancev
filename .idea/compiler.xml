@@ -8,4 +8,9 @@
       <module name="Sandbox_test" target="1.10" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Sandbox_test" options="--add-exports=jdk.scripting.nashorn/jdk.nashorn.internal.runtime=ALL-UNNAMED" />
+    </option>
+  </component>
 </project>

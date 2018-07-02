@@ -25,7 +25,7 @@ public class ContactHelper extends HelperBase
 
     public void fillAllContactFields(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getName());
-        type(By.name("middlename"), contactData.getMiddlename());
+        type(By.name("email"), contactData.getEmail());
         type(By.name("lastname"), contactData.getLastname());
 
         if (creation && contactData.getGroup() != null)
@@ -51,7 +51,7 @@ public class ContactHelper extends HelperBase
     public void confirmDeletionYes() { wd.switchTo().alert().accept(); }
     public void confirmDeletionNo() { wd.switchTo().alert().dismiss(); }
 
-    public void editContact() {click(By.xpath("/html/body/div[1]/div[4]/form[2]/table/tbody/tr[2]/td[8]/a/img"));}
+    public void editContact(int index) {click(By.xpath("/html/body/div[1]/div[4]/form[2]/table/tbody/tr["+index+"]/td[8]/a/img"));}
 
     public void createContact(ContactData contactData) {
         initNewContact();
@@ -64,13 +64,15 @@ public class ContactHelper extends HelperBase
         int index = 1;
         String name;
         String lastname;
+        String email;
         while (true)
         {
             try {
                 index++;
                 lastname = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[2]")).getText();
                 name = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[3]")).getText();
-                ContactData contact = new ContactData(name, null, lastname, null);
+                email = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[5]/a")).getText();;
+                ContactData contact = new ContactData(name, email, lastname, null);
                 contacts.add(contact);
             } catch (NoSuchElementException e) {
                 break;

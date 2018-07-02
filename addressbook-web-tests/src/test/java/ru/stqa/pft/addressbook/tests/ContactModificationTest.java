@@ -13,11 +13,11 @@ public class ContactModificationTest extends TestBase{
     public void testContactModification() {
         if (! app.getContactHelper().isElementPresent(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img")))
         {
-            app.getContactHelper().createContact(new ContactData("fordeletion", "fordeletion", "fordeletion", null));
+            app.getContactHelper().createContact(new ContactData("fordmodify", "formodify", "formodify", null));
         }
         List<ContactData> before = app.getContactHelper().getContactList();
-        app.getContactHelper().editContact();
-        app.getContactHelper().fillAllContactFields(new ContactData("testmodified45", "testmodified45", "testmodified45", null), false);
+        app.getContactHelper().editContact(before.size()-1);
+        app.getContactHelper().fillAllContactFields(new ContactData("testmodified45", "testmodified45@test.com", "testmodified45", null), false);
         app.getContactHelper().updateContact();
         app.getNavigationHelper().goToMainPage();
         List<ContactData> after = app.getContactHelper().getContactList();

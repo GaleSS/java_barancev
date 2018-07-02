@@ -14,7 +14,7 @@ public class ContactCreationTest extends TestBase {
     public void testContactCreation() throws InterruptedException {
         List<ContactData> before = app.getContactHelper().getContactList();
         app.getContactHelper().initNewContact();
-        app.getContactHelper().fillAllContactFields(new ContactData("test45", "test45", "test45", null), true);
+        app.getContactHelper().fillAllContactFields(new ContactData("test45name", "test45@test.com", "test45lastname", null), true);
         app.getContactHelper().submitContactCreation();
         app.getNavigationHelper().goToMainPage();
         List<ContactData> after = app.getContactHelper().getContactList();

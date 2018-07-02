@@ -18,8 +18,7 @@ public class GroupModificationTest extends TestBase
         }
         app.getNavigationHelper().goToGroupPage();
         List<GroupData> before = app.getGroupHelper().getGroupList();
-        int index =  before.size();
-        app.getGroupHelper().selectGroup(index - 1);
+        app.getGroupHelper().selectGroup(before.size() - 1);
         app.getGroupHelper().modifySelectedGroups();
         app.getGroupHelper().fillAllFields(new GroupData("test45modified", "test45modified", "test45modified"));
         app.getGroupHelper().updateGroup();

@@ -4,18 +4,21 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.GroupData;
+
+import java.util.List;
 
 public class ContactCreationTest extends TestBase {
 
     @Test
     public void testContactCreation() throws InterruptedException {
-        int before =  app.getGroupHelper().elementCount(By.name("selected[]"));
+        List<ContactData> before = app.getContactHelper().getContactList();
         app.getContactHelper().initNewContact();
         app.getContactHelper().fillAllContactFields(new ContactData("test45", "test45", "test45", null), true);
         app.getContactHelper().submitContactCreation();
         app.getNavigationHelper().goToMainPage();
-        int after =  app.getGroupHelper().elementCount(By.name("selected[]"));
-        Assert.assertEquals(before, after -1 );
+        List<ContactData> after = app.getContactHelper().getContactList();
+        Assert.assertEquals(before.size(), after.size() -1 );
     }
 
 }

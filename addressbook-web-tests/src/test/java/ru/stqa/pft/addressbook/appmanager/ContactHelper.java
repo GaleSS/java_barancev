@@ -9,6 +9,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ContactHelper extends HelperBase
 {
     public ContactHelper(WebDriver wd) {
@@ -54,6 +57,27 @@ public class ContactHelper extends HelperBase
         initNewContact();
         fillAllContactFields(contactData, true);
         submitContactCreation();
+    }
+
+    public List<ContactData> getContactList() {
+        List<ContactData> contacts = new ArrayList<ContactData>();
+        int index = 1;
+        String name;
+        String lastname;
+        while (true)
+        {
+            try {
+                index++;
+                lastname = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[2]")).getText();
+                name = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[3]")).getText();
+                ContactData contact = new ContactData(name, null, lastname, null);
+                contacts.add(contact);
+            } catch (NoSuchElementException e) {
+                break;
+            }
+
+        }
+        return contacts;
     }
 }
 

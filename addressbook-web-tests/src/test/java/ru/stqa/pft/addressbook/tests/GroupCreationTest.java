@@ -5,16 +5,19 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.util.List;
+
 public class GroupCreationTest extends TestBase {
 
     @Test
     public void testGroupCreation() throws InterruptedException {
         app.getNavigationHelper().goToGroupPage();
-        int before =  app.getGroupHelper().elementCount(By.name("selected[]"));
+        List<GroupData> before = app.getGroupHelper().getGroupList();
         app.getGroupHelper().createGroup(new GroupData("test45", "test45", "test45"));
         app.getNavigationHelper().goToGroupPage();
-        int after =  app.getGroupHelper().elementCount(By.name("selected[]"));
-        Assert.assertEquals(before, after-1);
+        List<GroupData> after = app.getGroupHelper().getGroupList();
+        Assert.assertEquals(before.size(), after.size()-1);
     }
+
 
 }

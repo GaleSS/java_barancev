@@ -12,13 +12,13 @@ public class Solution
 {
     public static void main(String[] args)
     {
-        String leftPart = "1";
+        StringBuffer leftPart = new StringBuffer("1");
         int rightPart = 1;
         System.out.println(leftPart);
         for (int i=2;i<11;i++)
         {
             rightPart = rightPart + i;
-            leftPart = leftPart + "+"+i;
+            leftPart.append("+"+i);
             System.out.println(leftPart+"="+rightPart);
         }
     }

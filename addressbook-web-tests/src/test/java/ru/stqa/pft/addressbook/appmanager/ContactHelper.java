@@ -51,7 +51,10 @@ public class ContactHelper extends HelperBase
     public void confirmDeletionYes() { wd.switchTo().alert().accept(); }
     public void confirmDeletionNo() { wd.switchTo().alert().dismiss(); }
 
-    public void editContact(int index) {click(By.xpath("/html/body/div[1]/div[4]/form[2]/table/tbody/tr["+index+"]/td[8]/a/img"));}
+    public void editContact(int index) {
+        index = index + 2;
+        click(By.xpath("/html/body/div[1]/div[4]/form[2]/table/tbody/tr["+index+"]/td[8]/a/img"));
+    }
 
     public void createContact(ContactData contactData) {
         initNewContact();

@@ -1,12 +1,12 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
-import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.util.Comparator;
 import java.util.List;
+
 
 public class ContactCreationTest extends TestBase {
 
@@ -19,6 +19,13 @@ public class ContactCreationTest extends TestBase {
         app.getNavigationHelper().goToMainPage();
         List<ContactData> after = app.getContactHelper().getContactList();
         Assert.assertEquals(before.size(), after.size() -1 );
+
+        before.add(new ContactData("test45name", "test45@test.com", "test45lastname", null));
+        Comparator <? super ContactData> byAlphabet = (q1, q2) -> (q1.getName()+q1.getLastname()).compareTo(q2.getName()+q2.getLastname());
+        before.sort(byAlphabet);
+        after.sort(byAlphabet);
+        Assert.assertEquals(before, after);
+
     }
 
 }

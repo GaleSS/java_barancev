@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ContactModificationTest extends TestBase{
 
-    @Test
+    @Test(enabled = false)
     public void testContactModification() {
         if (! app.getContactHelper().isElementPresent(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img")))
         {

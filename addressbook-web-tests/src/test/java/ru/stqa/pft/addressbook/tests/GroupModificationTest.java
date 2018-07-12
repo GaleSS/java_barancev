@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import ru.stqa.pft.addressbook.model.GroupData;
@@ -13,25 +12,25 @@ public class GroupModificationTest extends TestBase
 {
     @BeforeMethod
     public void checkConditions(){
-        app.getNavigationHelper().goToGroupPage();
-        if (! app.getGroupHelper().isElementPresent(By.name("selected[]")))
+        app.goTo().GroupPage();
+        if (app.group().list().size() == 0)
         {
-            app.getGroupHelper().createGroup(new GroupData("formodify", "formodify", "formodify"));
+            app.group().createGroup(new GroupData().withName("formodify").withFooter("formodify").withHeader("formodify"));
         }
-        app.getNavigationHelper().goToGroupPage();
+        app.goTo().GroupPage();
     }
 
     @Test
     public void testGroupModification() throws InterruptedException {
 
-        List<GroupData> before = app.getGroupHelper().getGroupList();
+        List<GroupData> before = app.group().list();
         int index = before.size() - 1;
-        GroupData group = new GroupData(before.get(index).getId(),"test45modified", "test45modified", "test45modified");
+        GroupData group = new GroupData().withId(before.get(index).getId()).withName("test45modified").withFooter("test45modified").withHeader("test45modified");
 
-        app.getGroupHelper().modifyGroup(index, group);
+        app.group().modify(index, group);
 
-        app.getNavigationHelper().goToGroupPage();
-        List<GroupData> after = app.getGroupHelper().getGroupList();
+        app.goTo().GroupPage();
+        List<GroupData> after = app.group().list();
         Assert.assertEquals(before.size(), after.size());
 
         before.remove(index);

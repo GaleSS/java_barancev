@@ -18,7 +18,7 @@ public class ContactDeletionTest extends TestBase {
         {
             app.getContactHelper().createContact(new ContactData("fordeletion", "fordeletion", "fordeletion", null));
         }
-        app.getNavigationHelper().goToMainPage();
+        app.goTo().MainPage();
     }
 
     @Test
@@ -30,7 +30,7 @@ public class ContactDeletionTest extends TestBase {
         app.getContactHelper().deleteSelectedContact();
         app.getContactHelper().confirmDeletionYes();
         Thread.sleep(1000);
-        app.getNavigationHelper().goToMainPage();
+        app.goTo().MainPage();
 
         List<ContactData> after = app.getContactHelper().getContactList();
         Assert.assertEquals(before.size(), after.size()+1);

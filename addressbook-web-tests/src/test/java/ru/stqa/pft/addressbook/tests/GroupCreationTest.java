@@ -1,11 +1,9 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
@@ -14,18 +12,18 @@ public class GroupCreationTest extends TestBase {
 
     @Test
     public void testGroupCreation() throws InterruptedException {
-        app.getNavigationHelper().goToGroupPage();
-        List<GroupData> before = app.getGroupHelper().getGroupList();
+        app.goTo().GroupPage();
+        List<GroupData> before = app.group().list();
 
-        GroupData group = new GroupData("test4", "test4", "test4");
+        GroupData group = new GroupData().withName("test4").withFooter("test4").withHeader("test4");
 
-        app.getGroupHelper().createGroup(group);
-        app.getNavigationHelper().goToGroupPage();
+        app.group().createGroup(group);
+        app.goTo().GroupPage();
 
-        List<GroupData> after = app.getGroupHelper().getGroupList();
+        List<GroupData> after = app.group().list();
 
 
-        group.setId(after.stream().max((o1,o2) -> Integer.compare(o1.getId(),o2.getId())).get().getId());
+        group.withId(after.stream().max((o1, o2) -> Integer.compare(o1.getId(),o2.getId())).get().getId());
         before.add(group);
 
         Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));

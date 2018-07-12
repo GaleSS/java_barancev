@@ -28,7 +28,7 @@ public class ContactModificationTest extends TestBase{
         app.getContactHelper().editContact(before.size()-1);
         app.getContactHelper().fillAllContactFields(new ContactData("testmodified45", "testmodified45@test.com", "testmodified45", null), false);
         app.getContactHelper().updateContact();
-        app.getNavigationHelper().goToMainPage();
+        app.goTo().MainPage();
 
         List<ContactData> after = app.getContactHelper().getContactList();
 

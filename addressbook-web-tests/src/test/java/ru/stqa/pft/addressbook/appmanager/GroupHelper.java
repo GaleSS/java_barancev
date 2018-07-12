@@ -52,21 +52,21 @@ public class GroupHelper  extends HelperBase{
         submitGroupCreation();
     }
 
-    public void modifyGroup(int index, GroupData group) {
+    public void modify(int index, GroupData group) {
         selectGroup(index);
         modifySelectedGroups();
         fillAllFields(group);
         updateGroup();
     }
 
-    public List<GroupData> getGroupList() {
+    public List<GroupData> list() {
         List<GroupData> groups = new ArrayList<GroupData>();
         List<WebElement> elements = wd.findElements(By.cssSelector("span.group"));
         for (WebElement element : elements)
         {
             String name = element.getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            GroupData group = new GroupData(id, name,null,null);
+            GroupData group = new GroupData().withId(id).withName(name).withHeader(null).withFooter(null);
             groups.add(group);
         }
         return groups;

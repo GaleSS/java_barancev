@@ -10,13 +10,13 @@ public class NavigationHelper extends HelperBase{
         super(wd);
     }
 
-    public void goToGroupPage() {
+    public void GroupPage() {
         if (!(isElementPresent(By.tagName("h1")) && wd.findElement(By.tagName("h1")).getText() == "Групи" && isElementPresent(By.name("new")))) {
             click(By.linkText("Групи"));
         }
     }
 
-    public void goToMainPage() {
+    public void MainPage() {
         //if (!(isElementPresent(By.tagName("h1")) && wd.findElement(By.tagName("h1")).getText() == "Групи" && isElementPresent(By.name("new")))) {
             click(By.linkText("Головна"));
         //}

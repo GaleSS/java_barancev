@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.BrowserType;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.openqa.selenium.remote.BrowserType.*;
@@ -20,7 +19,7 @@ public class ApplicationManager {
     private NavigationHelper navigationHelper;
     private SessionHelper sessionHelper;
     private ContactHelper contactHelper;
-    private GroupHelper groupHelper;
+    public GroupHelper groupHelper;
 
     public void init() {
         //System.setProperty("webdriver.gecko.driver", "E:\\\\Tools\\geckodriver\\geckodriver.exe");
@@ -47,10 +46,6 @@ public class ApplicationManager {
         wd.quit();
     }
 
-
-    public GroupHelper group() {
-        return groupHelper;
-    }
 
     public ContactHelper getContactHelper() {
         return contactHelper;

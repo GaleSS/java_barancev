@@ -1,12 +1,11 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 
-import java.util.List;
+import java.util.Set;
 
 
 public class GroupDeletionTest extends TestBase {
@@ -14,9 +13,9 @@ public class GroupDeletionTest extends TestBase {
     @BeforeMethod
     public void checkConditions(){
         app.goTo().GroupPage();
-        if (app.group().list().size() == 0)
+        if (app.groupHelper.group(app).all().size() == 0)
         {
-            app.group().createGroup(new GroupData().withName("fordeletion").withFooter("fordeletion").withHeader("fordeletion"));
+            app.groupHelper.group(app).createGroup(new GroupData().withName("fordeletion").withFooter("fordeletion").withHeader("fordeletion"));
         }
         app.goTo().GroupPage();
     }
@@ -24,19 +23,16 @@ public class GroupDeletionTest extends TestBase {
     @Test
     public void testGroupDeletion(){
 
-        List<GroupData> before = app.group().list();
-        int index = before.size() - 1;
-
-        app.group().selectGroup(index);
-        app.group().deleteSelectedGroups();
+        Set<GroupData> before = app.groupHelper.group(app).all();
+        GroupData deletedGroup = before.iterator().next();
+        app.groupHelper.delete(deletedGroup);
         app.goTo().GroupPage();
-        List<GroupData> after = app.group().list();
+        Set<GroupData> after = app.groupHelper.group(app).all();
+        Assert.assertEquals(before.size()-1,after.size());
 
-        before.remove(index);
+        before.remove(deletedGroup);
         Assert.assertEquals(before, after);
 
 
     }
-
-
 }

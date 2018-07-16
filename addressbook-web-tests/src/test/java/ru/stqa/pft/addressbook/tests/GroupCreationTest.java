@@ -12,11 +12,11 @@ public class GroupCreationTest extends TestBase {
     @Test
     public void testGroupCreation() throws InterruptedException {
         app.goTo().GroupPage();
-        Set<GroupData> before = app.groupHelper.group(app).all();
+        Set<GroupData> before = app.group().all();
         GroupData group = new GroupData().withName("test4").withFooter("test4").withHeader("test4");
-        app.groupHelper.group(app).createGroup(group);
+        app.group().createGroup(group);
         app.goTo().GroupPage();
-        Set<GroupData> after = app.groupHelper.group(app).all();
+        Set<GroupData> after = app.group().all();
         Assert.assertEquals(before.size()+1,after.size());
         group.withId(after.stream().mapToInt(g -> g.getId()).max().getAsInt());
         before.add(group);

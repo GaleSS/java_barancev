@@ -13,9 +13,9 @@ public class GroupDeletionTest extends TestBase {
     @BeforeMethod
     public void checkConditions(){
         app.goTo().GroupPage();
-        if (app.groupHelper.group(app).all().size() == 0)
+        if (app.group().all().size() == 0)
         {
-            app.groupHelper.group(app).createGroup(new GroupData().withName("fordeletion").withFooter("fordeletion").withHeader("fordeletion"));
+            app.group().createGroup(new GroupData().withName("fordeletion").withFooter("fordeletion").withHeader("fordeletion"));
         }
         app.goTo().GroupPage();
     }
@@ -23,11 +23,11 @@ public class GroupDeletionTest extends TestBase {
     @Test
     public void testGroupDeletion(){
 
-        Set<GroupData> before = app.groupHelper.group(app).all();
+        Set<GroupData> before = app.group().all();
         GroupData deletedGroup = before.iterator().next();
         app.groupHelper.delete(deletedGroup);
         app.goTo().GroupPage();
-        Set<GroupData> after = app.groupHelper.group(app).all();
+        Set<GroupData> after = app.group().all();
         Assert.assertEquals(before.size()-1,after.size());
 
         before.remove(deletedGroup);

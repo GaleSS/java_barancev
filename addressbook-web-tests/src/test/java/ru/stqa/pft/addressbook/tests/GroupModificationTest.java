@@ -12,9 +12,9 @@ public class GroupModificationTest extends TestBase
     @BeforeMethod
     public void checkConditions(){
         app.goTo().GroupPage();
-        if (app.groupHelper.group(app).all().size() == 0)
+        if (app.group().all().size() == 0)
         {
-            app.groupHelper.group(app).createGroup(new GroupData().withName("formodify").withFooter("formodify").withHeader("formodify"));
+            app.group().createGroup(new GroupData().withName("formodify").withFooter("formodify").withHeader("formodify"));
         }
         app.goTo().GroupPage();
     }
@@ -22,13 +22,13 @@ public class GroupModificationTest extends TestBase
     @Test
     public void testGroupModification() throws InterruptedException {
 
-        Set<GroupData> before = app.groupHelper.group(app).all();
+        Set<GroupData> before = app.group().all();
         GroupData modifiedGroup = before.iterator().next();
         GroupData group = new GroupData().withId(modifiedGroup.getId()).withName("modifiedGroup").withFooter("modifiedGroup").withHeader("modifiedGroup");
 
-        app.groupHelper.group(app).modify(group);
+        app.group().modify(group);
         app.goTo().GroupPage();
-        Set<GroupData> after = app.groupHelper.group(app).all();
+        Set<GroupData> after = app.group().all();
         Assert.assertEquals(before.size(), after.size());
 
         before.remove(modifiedGroup);

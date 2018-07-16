@@ -74,8 +74,4 @@ public class GroupHelper  extends HelperBase{
         }
         return groups;
     }
-
-    public GroupHelper group(ApplicationManager applicationManager) {
-        return this;
-    }
 }

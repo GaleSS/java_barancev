@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ContactCreationTest extends TestBase {
 
-    @Test (enabled = false)
+    @Test
     public void testContactCreation() throws InterruptedException {
         List<ContactData> before = app.getContactHelper().getContactList();
         app.getContactHelper().initNewContact();

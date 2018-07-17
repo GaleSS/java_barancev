@@ -19,7 +19,7 @@ public class ApplicationManager {
     private NavigationHelper navigationHelper;
     private SessionHelper sessionHelper;
     private ContactHelper contactHelper;
-    public GroupHelper groupHelper;
+    private GroupHelper groupHelper;
 
     public void init() {
         //System.setProperty("webdriver.gecko.driver", "E:\\\\Tools\\geckodriver\\geckodriver.exe");

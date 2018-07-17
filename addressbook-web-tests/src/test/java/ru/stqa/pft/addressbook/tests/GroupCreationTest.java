@@ -1,10 +1,12 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 
-import java.util.Set;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertEquals;
 
 
 public class GroupCreationTest extends TestBase {
@@ -12,17 +14,17 @@ public class GroupCreationTest extends TestBase {
     @Test
     public void testGroupCreation() throws InterruptedException {
         app.goTo().GroupPage();
-        Set<GroupData> before = app.group().all();
+        Groups before = app.group().all();
         GroupData group = new GroupData().withName("test4").withFooter("test4").withHeader("test4");
         app.group().createGroup(group);
         app.goTo().GroupPage();
-        Set<GroupData> after = app.group().all();
-        Assert.assertEquals(before.size()+1,after.size());
-        group.withId(after.stream().mapToInt(g -> g.getId()).max().getAsInt());
-        before.add(group);
-        Assert.assertEquals(before, after);
+        Groups after = app.group().all();
+        assertEquals(before.size()+1,after.size());
+        assertThat(before.size(),equalTo(after.size()-1));
+        //before.add(group);
+        //Assert.assertEquals(before, after);
+        assertThat(after,equalTo(
+                before.withAdded(group.withId(after.stream().mapToInt(g -> g.getId()).max().getAsInt()))));
 
     }
-
-
 }

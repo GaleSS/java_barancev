@@ -1,11 +1,13 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 
-import java.util.Set;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertEquals;
 
 public class GroupModificationTest extends TestBase
 {
@@ -22,19 +24,16 @@ public class GroupModificationTest extends TestBase
     @Test
     public void testGroupModification() throws InterruptedException {
 
-        Set<GroupData> before = app.group().all();
+        Groups before = app.group().all();
         GroupData modifiedGroup = before.iterator().next();
         GroupData group = new GroupData().withId(modifiedGroup.getId()).withName("modifiedGroup").withFooter("modifiedGroup").withHeader("modifiedGroup");
 
         app.group().modify(group);
         app.goTo().GroupPage();
-        Set<GroupData> after = app.group().all();
-        Assert.assertEquals(before.size(), after.size());
+        Groups after = app.group().all();
 
-        before.remove(modifiedGroup);
-        before.add(group);
-
-        Assert.assertEquals(before, after);
+        assertEquals(before.size(), after.size());
+        assertThat(after,equalTo(before.without(modifiedGroup).withAdded(group)));
     }
 
 }

@@ -33,8 +33,5 @@ public class GroupDeletionTest extends TestBase {
 
         assertEquals(before.size()-1,after.size());
         assertThat(after,equalTo(before.without(deletedGroup)));
-
-
-
     }
 }

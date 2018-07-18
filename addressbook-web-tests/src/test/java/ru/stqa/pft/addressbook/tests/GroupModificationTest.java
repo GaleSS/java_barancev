@@ -23,16 +23,14 @@ public class GroupModificationTest extends TestBase
 
     @Test
     public void testGroupModification() throws InterruptedException {
-
         Groups before = app.group().all();
         GroupData modifiedGroup = before.iterator().next();
         GroupData group = new GroupData().withId(modifiedGroup.getId()).withName("modifiedGroup").withFooter("modifiedGroup").withHeader("modifiedGroup");
 
         app.group().modify(group);
         app.goTo().GroupPage();
+        assertEquals(before.size(), app.group().count());
         Groups after = app.group().all();
-
-        assertEquals(before.size(), after.size());
         assertThat(after,equalTo(before.without(modifiedGroup).withAdded(group)));
     }
 

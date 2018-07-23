@@ -10,7 +10,9 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase
 {
@@ -75,7 +77,7 @@ public class ContactHelper extends HelperBase
                 lastname = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[2]")).getText();
                 name = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[3]")).getText();
                 email = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[5]/a")).getText();;
-                ContactData contact = new ContactData(name, email, lastname, null);
+                ContactData contact = new ContactData().withName(name).withEmail(email).withLastname(lastname);
                 contacts.add(contact);
             } catch (NoSuchElementException e) {
                 break;
@@ -84,5 +86,28 @@ public class ContactHelper extends HelperBase
         }
         return contacts;
     }
+
+    public Set<ContactData> all() {
+        Set<ContactData> contacts = new HashSet<ContactData>();
+
+        List<WebElement> elements = wd.findElements(By.name("entry"));
+        for (WebElement element : elements)
+        {
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+            String lastName = element.findElement(By.xpath("./td[2]")).getText();
+            String name = element.findElement(By.xpath("./td[3]")).getText();
+            String email = element.findElement(By.xpath("./td[5]/a")).getText();
+            contacts.add(new ContactData().withId(id).withLastname(lastName).withName(name).withEmail(email));
+        }
+
+        return contacts;
+    }
+
+    public void all_test() {
+        Set<ContactData> contacts = new HashSet<ContactData>();
+
+
+    }
 }
+
 

@@ -16,7 +16,7 @@ public class ContactModificationTest extends TestBase{
     {
         if (! app.getContactHelper().isElementPresent(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img")))
         {
-            app.getContactHelper().createContact(new ContactData("fordmodify", "formodify", "formodify", null));
+            app.getContactHelper().createContact(new ContactData().withName("formodify").withEmail("formodify").withLastname("formodify"));
         }
     }
 
@@ -25,15 +25,16 @@ public class ContactModificationTest extends TestBase{
 
         List<ContactData> before = app.getContactHelper().getContactList();
 
+        ContactData modifiedContact = new ContactData().withName("testmodified45").withEmail("testmodified45").withLastname("testmodified45");
         app.getContactHelper().editContact(before.size()-1);
-        app.getContactHelper().fillAllContactFields(new ContactData("testmodified45", "testmodified45@test.com", "testmodified45", null), false);
+        app.getContactHelper().fillAllContactFields(modifiedContact, false);
         app.getContactHelper().updateContact();
         app.goTo().MainPage();
 
         List<ContactData> after = app.getContactHelper().getContactList();
 
         before.remove(before.size()-1);
-        before.add(new ContactData("testmodified45", "testmodified45@test.com", "testmodified45", null));
+        before.add(modifiedContact);
 
         Assert.assertEquals(before.size(),after.size());
 

@@ -3,35 +3,30 @@ package ru.stqa.pft.addressbook.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.Contacts;
 
 import java.util.Comparator;
 import java.util.List;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertEquals;
 
 
 public class ContactCreationTest extends TestBase {
 
     @Test
     public void testContactCreation() throws InterruptedException {
-        List<ContactData> before = app.getContactHelper().getContactList();
+        Contacts before = app.contact().all();
 
         ContactData contact = new ContactData().withName("test45name").withLastname("test45lastname").withEmail("test45@test.com");
-        create(contact);
+        app.contact().create(contact);
         app.goTo().MainPage();
-        List<ContactData> after = app.getContactHelper().getContactList();
-        Assert.assertEquals(before.size(), after.size() -1 );
+        assertEquals(before.size()+1,app.contact().count());
+        Contacts after = app.contact().all();
 
-        before.add(contact);
-        Comparator <? super ContactData> byAlphabet = (q1, q2) -> (q1.getName()+q1.getLastname()).compareTo(q2.getName()+q2.getLastname());
-        before.sort(byAlphabet);
-        after.sort(byAlphabet);
-        Assert.assertEquals(before, after);
-
-    }
-
-    public void create(ContactData createdContact) {
-        app.getContactHelper().initNewContact();
-        app.getContactHelper().fillAllContactFields(createdContact,true);
-        app.getContactHelper().submitContactCreation();
+        assertThat(after,equalTo(
+                before.withAdded(contact.withId(after.stream().mapToInt(g -> g.getId()).max().getAsInt()))));
     }
 
 }

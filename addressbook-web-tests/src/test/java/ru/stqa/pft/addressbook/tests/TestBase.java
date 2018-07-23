@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.appmanager.ApplicationManager;
+import ru.stqa.pft.addressbook.model.ContactData;
 
 public class TestBase {
 

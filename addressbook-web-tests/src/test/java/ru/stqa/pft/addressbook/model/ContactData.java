@@ -39,14 +39,6 @@ public class ContactData {
         return this;
     }
 
-    @Override
-    public String toString() {
-        return "ContactData{" +
-                "name='" + name + '\'' +
-                ", lastname='" + lastname + '\'' +
-                '}';
-    }
-
     public String getEmail() {
         return email;
     }
@@ -63,8 +55,18 @@ public class ContactData {
         return name;
     }
 
-    public int getID() {
+    public int getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", lastname='" + lastname + '\'' +
+                '}';
     }
 
     @Override
@@ -83,8 +85,4 @@ public class ContactData {
 
         return Objects.hash(id, name, email, lastname);
     }
-
-
-
-
 }

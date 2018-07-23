@@ -4,16 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends HelperBase
 {
@@ -42,10 +39,6 @@ public class ContactHelper extends HelperBase
 
     public void initNewContact() {
         click(By.xpath("/html/body/div/div[3]/ul/li[2]/a"));
-    }
-
-    public void selectContact(int index) {
-        wd.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void selectContactById(int id) {
@@ -95,28 +88,6 @@ public class ContactHelper extends HelperBase
         contactsCache = null;
     }
 
-    public List<ContactData> getContactList() {
-        List<ContactData> contacts = new ArrayList<ContactData>();
-        int index = 1;
-        String name;
-        String lastname;
-        String email;
-        while (true)
-        {
-            try {
-                index++;
-                lastname = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[2]")).getText();
-                name = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[3]")).getText();
-                email = wd.findElement(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[" + index + "]/td[5]/a")).getText();;
-                ContactData contact = new ContactData().withName(name).withEmail(email).withLastname(lastname);
-                contacts.add(contact);
-            } catch (NoSuchElementException e) {
-                break;
-            }
-
-        }
-        return contacts;
-    }
 
     private Contacts contactsCache = null;
 

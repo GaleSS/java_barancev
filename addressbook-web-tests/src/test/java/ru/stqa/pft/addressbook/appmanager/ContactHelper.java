@@ -12,13 +12,15 @@ import ru.stqa.pft.addressbook.model.Contacts;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContactHelper extends HelperBase
-{
+public class ContactHelper extends HelperBase {
     public ContactHelper(WebDriver wd) {
         super(wd);
     }
 
-    public void submitContactCreation() {click(By.name("submit")); }
+    public void submitContactCreation() {
+        click(By.name("submit"));
+    }
+
     public void updateContact() {
         click(By.name("update"));
     }
@@ -28,11 +30,9 @@ public class ContactHelper extends HelperBase
         type(By.name("email"), contactData.getEmail());
         type(By.name("lastname"), contactData.getLastname());
 
-        if (creation && contactData.getGroup() != null)
-        {
+        if (creation && contactData.getGroup() != null) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-        } else if (!creation)
-        {
+        } else if (!creation) {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
     }
@@ -42,43 +42,45 @@ public class ContactHelper extends HelperBase
     }
 
     public void selectContactById(int id) {
-        List<WebElement> elements = wd.findElements(By.name("selected[]"));
-        for (WebElement element : elements)
-        {
-            if (Integer.parseInt(element.getAttribute("value")) == id )
-            {
-                element.click();
-            }
-        }
+        wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
     }
 
-    public void deleteSelectedContact() {click(By.xpath("/html/body/div[1]/div[4]/form[2]/div[2]/input"));}
+    public void deleteSelectedContact() {
+        click(By.xpath("/html/body/div[1]/div[4]/form[2]/div[2]/input"));
+    }
 
 
-    public void confirmDeletionYes() { wd.switchTo().alert().accept(); }
-    public void confirmDeletionNo() { wd.switchTo().alert().dismiss(); }
+    public void confirmDeletionYes() {
+        wd.switchTo().alert().accept();
+    }
+
+    public void confirmDeletionNo() {
+        wd.switchTo().alert().dismiss();
+    }
 
     public void editContactById(int id) {
-        wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']",id))).click();
+        wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
 
     }
+
     public void create(ContactData createdContact) {
-       initNewContact();
-       fillAllContactFields(createdContact,true);
-       submitContactCreation();
+        initNewContact();
+        fillAllContactFields(createdContact, true);
+        submitContactCreation();
     }
-    public void delete(ContactData deletedContact) {
-      selectContactById(deletedContact.getId());
-      deleteSelectedContact();
-      confirmDeletionYes();
 
+    public void delete(ContactData deletedContact) {
+        selectContactById(deletedContact.getId());
+        deleteSelectedContact();
+        confirmDeletionYes();
+        contactsCache = null;
     }
 
     public void modify(ContactData contact) {
-     editContactById(contact.getId());
-     fillAllContactFields(contact, false);
-     updateContact();
-     contactsCache = null;
+        editContactById(contact.getId());
+        fillAllContactFields(contact, false);
+        updateContact();
+        contactsCache = null;
     }
 
     public void createContact(ContactData contactData) {
@@ -92,16 +94,14 @@ public class ContactHelper extends HelperBase
     private Contacts contactsCache = null;
 
     public Contacts all() {
-        if (contactsCache != null)
-        {
+        if (contactsCache != null) {
             return new Contacts(contactsCache);
         }
 
         contactsCache = new Contacts();
 
         List<WebElement> elements = wd.findElements(By.name("entry"));
-        for (WebElement element : elements)
-        {
+        for (WebElement element : elements) {
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
             String lastName = element.findElement(By.xpath("./td[2]")).getText();
             String name = element.findElement(By.xpath("./td[3]")).getText();

@@ -6,6 +6,8 @@
       <module name="addressbook-web-tests_test" target="1.10" />
       <module name="Sandbox_main" target="1.10" />
       <module name="Sandbox_test" target="1.10" />
+      <module name="testFilesLogs_main" target="1.10" />
+      <module name="testFilesLogs_test" target="1.10" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

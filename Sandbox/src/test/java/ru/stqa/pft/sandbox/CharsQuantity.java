@@ -42,9 +42,16 @@ public class CharsQuantity
             list.add(s.toLowerCase());
         }
 
-
         //напишите тут ваш код
-
+        for (char letter : alphabet)
+        {
+            int occurenceCount = 0;
+            for(String string : list)
+            {
+               occurenceCount += (int) string.chars().filter(ch -> ch==letter).count();
+            }
+            System.out.println(letter+" "+occurenceCount);
+        }
 
     }
 

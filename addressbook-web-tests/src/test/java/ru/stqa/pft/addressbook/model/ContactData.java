@@ -1,21 +1,40 @@
 package ru.stqa.pft.addressbook.model;
 
+import ru.stqa.pft.addressbook.tests.ContactDataTest;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ContactData {
     private int id;
-    private String name;
-    private String email;
-    private String email2;
-    private String email3;
-    private String allEmails;
-    private String lastname;
+    private String name = "";
+    private String email = "";
+    private String email2 = "";
+    private String email3 = "";
+    private String allEmails = "";
+    private String lastname = "";
     private String group;
-    private String address;
-    private String homePhone;
-    private String mobilePhone;
-    private String workPhone;
-    private String allPhones;
+    private String address = "";
+    private String homePhone = "";
+    private String mobilePhone = "";
+    private String workPhone = "";
+    private String allPhones = "";
+
+    public File getPhoto() {
+        return photo;
+    }
+
+    public ContactData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
+
+    private File photo;
 
 
     public ContactData withEmail2(String email2) {
@@ -143,7 +162,6 @@ public class ContactData {
                 ", email='" + email + '\'' +
                 ", email2='" + email2 + '\'' +
                 ", email3='" + email3 + '\'' +
-                ", allEmails='" + allEmails + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", group='" + group + '\'' +
                 ", address='" + address + '\'' +
@@ -151,7 +169,22 @@ public class ContactData {
                 ", mobilePhone='" + mobilePhone + '\'' +
                 ", workPhone='" + workPhone + '\'' +
                 ", allPhones='" + allPhones + '\'' +
+                ", allEmails='" + allEmails + '\'' +
                 '}';
+    }
+
+    public String getAllPhones() {
+        return allPhones;
+    }
+
+    public static String cleaned(String phone)
+    {
+        return phone.replaceAll("\\s","").replaceAll("[-()]","");
+    }
+
+    public static String mergeEmails(ContactData contact)
+    {
+        return Arrays.asList(contact.getEmail(),contact.getEmail2(),contact.getEmail3()).stream().filter(s -> !s.equals("")).collect(Collectors.joining("\n"));
     }
 
     @Override
@@ -161,23 +194,21 @@ public class ContactData {
         ContactData that = (ContactData) o;
         return id == that.id &&
                 Objects.equals(name, that.name) &&
-                Objects.equals(email, that.email) &&
-                Objects.equals(email2, that.email2) &&
-                Objects.equals(email3, that.email3) &&
+                Objects.equals(allEmails, that.allEmails) &&
                 Objects.equals(lastname, that.lastname) &&
                 Objects.equals(address, that.address) &&
-                Objects.equals(homePhone, that.homePhone) &&
-                Objects.equals(mobilePhone, that.mobilePhone) &&
-                Objects.equals(workPhone, that.workPhone);
-    }
-
-    public String getAllPhones() {
-        return allPhones;
+                Objects.equals(allPhones, that.allPhones);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, name, email, email2, email3, lastname, address, homePhone, mobilePhone, workPhone);
+        return Objects.hash(id, name, allEmails, lastname, address, allPhones);
+    }
+
+    public static String mergePhones(ContactData contact)
+    {
+        return Arrays.asList(contact.getHomePhone(),contact.getMobilePhone(),contact.getWorkPhone()).stream().filter(s -> !s.equals(""))
+                .map(ContactData::cleaned).collect(Collectors.joining("\n"));
     }
 }

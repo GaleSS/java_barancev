@@ -33,6 +33,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("work"), contactData.getWorkPhone());
         type(By.name("address"), contactData.getAddress());
         type(By.name("lastname"), contactData.getLastname());
+        attach(By.name("photo"),contactData.getPhoto());
 
         if (creation && contactData.getGroup() != null) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
@@ -71,6 +72,7 @@ public class ContactHelper extends HelperBase {
         initNewContact();
         fillAllContactFields(createdContact, true);
         submitContactCreation();
+        contactsCache = null;
     }
 
     public void delete(ContactData deletedContact) {

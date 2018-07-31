@@ -9,6 +9,8 @@ import ru.stqa.pft.addressbook.model.Contacts;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static ru.stqa.pft.addressbook.model.ContactData.mergeEmails;
+import static ru.stqa.pft.addressbook.model.ContactData.mergePhones;
 
 public class ContactModificationTest extends TestBase{
 
@@ -27,6 +29,8 @@ public class ContactModificationTest extends TestBase{
         Contacts before = app.contact().all();
         ContactData modifiedContact = before.iterator().next();
         ContactData contact = new ContactData().withId(modifiedContact.getId()).withName("testmodified45").withEmail("testmodified45").withLastname("testmodified45");
+        contact.withAllEmails(mergeEmails(contact));
+        contact.withAllPhones(mergePhones(contact));
 
         app.contact().modify(contact);
         app.goTo().MainPage();

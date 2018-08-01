@@ -5,10 +5,11 @@ repositories {
     }
 
 dependencies{
-    testcompile 'org.testng:testng:6.14.3'
-    testcompile 'org.seleniumhq.selenium:selenium-java:3.12.0'
-    testcompile 'org.hamcrest:java-hamcrest:2.0.0.0'
-    testcompile 'com.beust:jcommander:1.72'
+    compile 'org.testng:testng:6.14.3'
+    compile 'org.seleniumhq.selenium:selenium-java:3.12.0'
+    compile 'org.hamcrest:java-hamcrest:2.0.0.0'
+    compile 'com.beust:jcommander:1.72'
+    compile 'com.thoughtworks.xstream:xstream:1.4.9'
 }
 
 

@@ -1,38 +1,35 @@
 [
   {
-    "id": 0,
     "name": "TestName0",
     "email": "TestEmail0",
-    "email2": "",
-    "email3": "",
+    "email2": "TestEmail20",
+    "email3": "TestEmail30",
     "lastname": "TestLastName0",
     "address": "TestAddress0",
-    "homePhone": "123 567 0",
-    "mobilePhone": "",
-    "workPhone": ""
+    "homePhone": "111 567 0",
+    "mobilePhone": "222 567 0",
+    "workPhone": "333 567 0"
   },
   {
-    "id": 0,
     "name": "TestName1",
     "email": "TestEmail1",
-    "email2": "",
-    "email3": "",
+    "email2": "TestEmail21",
+    "email3": "TestEmail31",
     "lastname": "TestLastName1",
     "address": "TestAddress1",
-    "homePhone": "123 567 1",
-    "mobilePhone": "",
-    "workPhone": ""
+    "homePhone": "111 567 1",
+    "mobilePhone": "222 567 1",
+    "workPhone": "333 567 1"
   },
   {
-    "id": 0,
     "name": "TestName2",
     "email": "TestEmail2",
-    "email2": "",
-    "email3": "",
+    "email2": "TestEmail22",
+    "email3": "TestEmail32",
     "lastname": "TestLastName2",
     "address": "TestAddress2",
-    "homePhone": "123 567 2",
-    "mobilePhone": "",
-    "workPhone": ""
+    "homePhone": "111 567 2",
+    "mobilePhone": "222 567 2",
+    "workPhone": "333 567 2"
   }
 ]

@@ -1,10 +1,21 @@
 package ru.stqa.pft.addressbook.tests;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -14,13 +25,31 @@ import static ru.stqa.pft.addressbook.model.ContactData.*;
 
 public class ContactCreationTest extends TestBase {
 
-    @Test
-    public void testContactCreation() throws InterruptedException {
+    @DataProvider
+    public Iterator<Object[]> validContactsJson() {
+        List<Object[]> list = new ArrayList<Object[]>();
+        String thisLine;
+        String json = "";
+
+        try (BufferedReader br = new BufferedReader(new FileReader("src/test/resources/contacts.json"))) {
+            while ((thisLine = br.readLine()) != null)
+            {
+                json += thisLine;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Gson gson = new Gson();
+        List<ContactData> contacts = gson.fromJson(json,new TypeToken<List<ContactData>>(){}.getType());
+        return contacts.stream().map(b -> new Object[]{b}).collect(Collectors.toList()).iterator();
+    }
+
+
+    @Test(dataProvider = "validContactsJson")
+    public void testContactCreation(ContactData createdContact) throws InterruptedException {
         Contacts before = app.contact().all();
         File photo = new File("src\\test\\resources\\images.jpg");
-
-        ContactData createdContact = new ContactData().withName("test45name").withLastname("test45lastname").withEmail("test45@test.com")
-                .withAddress("Test address").withPhoto(photo);
 
         createdContact.withAllEmails(mergeEmails(createdContact));
         createdContact.withAllPhones(mergePhones(createdContact));

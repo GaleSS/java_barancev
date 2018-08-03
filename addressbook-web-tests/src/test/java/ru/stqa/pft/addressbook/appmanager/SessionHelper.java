@@ -11,8 +11,8 @@ public class SessionHelper extends HelperBase{
         super(wd);
     }
 
-    protected void login(String username, String password) {
-        wd.get("http://localhost/addressbook/");
+    protected void login(String username, String password, String url) {
+        wd.get(url);//"http://localhost/addressbook/"
         type(By.name("user"), username);
         type(By.name("pass"), password);
         click(By.xpath("//form[@id='LoginForm']/input[3]"));

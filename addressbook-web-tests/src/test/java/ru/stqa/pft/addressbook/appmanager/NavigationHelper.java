@@ -11,14 +11,15 @@ public class NavigationHelper extends HelperBase{
     }
 
     public void GroupPage() {
-        if (!(isElementPresent(By.tagName("h1")) && wd.findElement(By.tagName("h1")).getText() == "Групи" && isElementPresent(By.name("new")))) {
-            click(By.linkText("Групи"));
-        }
+        //if (!(isElementPresent(By.tagName("h1")) && wd.findElement(By.tagName("h1")).getText() == "Групи" && isElementPresent(By.name("new")))) {
+          //  click(By.linkText("Групи"));
+        click(By.xpath("/html/body/div/div[3]/ul/li[3]/a"));
+       //}
     }
 
     public void MainPage() {
         //if (!(isElementPresent(By.tagName("h1")) && wd.findElement(By.tagName("h1")).getText() == "Групи" && isElementPresent(By.name("new")))) {
-            click(By.linkText("Головна"));
+            click(By.xpath("/html/body/div/div[3]/ul/li[1]/a"));
         //}
     }
 }

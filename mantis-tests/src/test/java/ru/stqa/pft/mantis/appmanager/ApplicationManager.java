@@ -25,6 +25,7 @@ public class ApplicationManager {
     private WebDriver wd;
     private String browser;
     private RegistrationHelper registrationHelper;
+    private FtpHelper ftpHelper;
 
     public void init() throws IOException {
         //System.setProperty("webdriver.gecko.driver", "E:\\\\Tools\\geckodriver\\geckodriver.exe");
@@ -52,6 +53,13 @@ public class ApplicationManager {
             registrationHelper = new RegistrationHelper(this);
         }
         return registrationHelper;
+    }
+
+    public FtpHelper ftp() {
+        if (ftpHelper == null){
+            ftpHelper = new FtpHelper(this);
+        }
+        return ftpHelper;
     }
 
     public WebDriver getDriver() {

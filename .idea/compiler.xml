@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="addressbook-web-tests_main" target="1.10" />
       <module name="addressbook-web-tests_test" target="1.10" />
+      <module name="google-search_main" target="1.10" />
+      <module name="google-search_test" target="1.10" />
       <module name="mantis-tests_main" target="1.10" />
       <module name="mantis-tests_test" target="1.10" />
       <module name="Sandbox_main" target="1.10" />

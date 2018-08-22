@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60af4db8-6eba-4004-8118-40df8778be65" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/google-search.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SearchManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis-tests/out/test/resources/config_inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/out/test/resources/config_inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/resources/config_inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/resources/config_inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-search/out/test/classes/ru/stqa/pft/addressbook/appmanager/SearchManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/google-search/out/test/classes/ru/stqa/pft/addressbook/appmanager/SearchManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-search/out/test/classes/ru/stqa/pft/addressbook/tests/PicassoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/google-search/out/test/classes/ru/stqa/pft/addressbook/tests/PicassoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SearchManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SearchManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/addressbook-web-tests/build/" />
     <ignored path="$PROJECT_DIR$/Sandbox/.gradle/" />
@@ -70,19 +66,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MethodInvocationHelper.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Invoker.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
+            <state relative-caret-position="9333">
               <caret line="592" selection-start-line="592" selection-end-line="592" />
             </state>
           </provider>
@@ -91,7 +78,7 @@
       <file leaf-file-name="TestMethodWorker.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/internal/TestMethodWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="1666">
               <caret line="113" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
@@ -100,7 +87,7 @@
       <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="7395">
               <caret line="510" selection-start-line="510" selection-end-line="510" />
             </state>
           </provider>
@@ -109,7 +96,7 @@
       <file leaf-file-name="SuiteRunner.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/SuiteRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="5389">
               <caret line="368" selection-start-line="368" selection-end-line="368" />
             </state>
           </provider>
@@ -118,7 +105,7 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="68">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -130,7 +117,7 @@
       <file leaf-file-name="SuiteRunnerWorker.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/SuiteRunnerWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
+            <state relative-caret-position="1275">
               <caret line="84" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="e#2607#2608#0" expanded="true" />
@@ -139,16 +126,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SearchManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SearchManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+            <state relative-caret-position="238">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#170#171#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -156,7 +150,7 @@
       <file leaf-file-name="TestNG.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/TestNG.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="15708">
               <caret line="1036" selection-start-line="1036" selection-end-line="1036" />
               <folding>
                 <element signature="e#33705#33706#0" expanded="true" />
@@ -169,8 +163,8 @@
       <file leaf-file-name="PicassoTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="221">
+              <caret line="13" column="72" lean-forward="true" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -199,11 +193,11 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$/Sandbox" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
-        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
-        <entry key="$PROJECT_DIR$/google-search" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
-        <entry key="$PROJECT_DIR$/mantis-tests" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
-        <entry key="$PROJECT_DIR$/testFilesLogs" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/Sandbox" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/google-search" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/mantis-tests" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/testFilesLogs" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -1048,23 +1042,23 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/Sandbox" value="4584392891005" />
+        <entry key="$PROJECT_DIR$/Sandbox" value="4588383809702" />
         <entry key="$PROJECT_DIR$/Sandbox/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/Sandbox/build.gradle" value="3737335831" />
         <entry key="$PROJECT_DIR$/Sandbox/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
-        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="4594863146247" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="4593470316197" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/build.gradle" value="1903795368" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
-        <entry key="$PROJECT_DIR$/google-search" value="4597818442206" />
+        <entry key="$PROJECT_DIR$/google-search" value="4604514315009" />
         <entry key="$PROJECT_DIR$/google-search/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/google-search/build.gradle" value="602172534" />
         <entry key="$PROJECT_DIR$/google-search/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
-        <entry key="$PROJECT_DIR$/mantis-tests" value="4596385637359" />
+        <entry key="$PROJECT_DIR$/mantis-tests" value="4604514391863" />
         <entry key="$PROJECT_DIR$/mantis-tests/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/mantis-tests/build.gradle" value="1051678241" />
         <entry key="$PROJECT_DIR$/mantis-tests/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
-        <entry key="$PROJECT_DIR$/testFilesLogs" value="4593274597411" />
+        <entry key="$PROJECT_DIR$/testFilesLogs" value="4604515607379" />
         <entry key="$PROJECT_DIR$/testFilesLogs/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/testFilesLogs/build.gradle" value="1744532254" />
         <entry key="$PROJECT_DIR$/testFilesLogs/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
@@ -1981,12 +1975,12 @@
         <option value="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/picassoTest.java" />
         <option value="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java" />
         <option value="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SearchManager.java" />
+        <option value="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="414" />
     <option name="y" value="144" />
     <option name="width" value="1400" />
@@ -1998,9 +1992,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2150,6 +2141,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2193,7 +2187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.PicassoTest.within5Results">
+  <component name="RunManager" selected="TestNG.PicassoTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -2389,8 +2383,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PicassoTest.within5Results" />
         <item itemvalue="TestNG.PicassoTest" />
+        <item itemvalue="TestNG.PicassoTest.within5Results" />
         <item itemvalue="TestNG.RegistrationTest" />
         <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.ContactDataTest" />
@@ -2411,15 +2405,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PicassoTest - 2018.08.20 at 18h 03m 46s.xml">
-      <configuration name="PicassoTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PicassoTest - 2018.08.20 at 18h 05m 08s.xml">
-      <configuration name="PicassoTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PicassoTest - 2018.08.20 at 18h 07m 26s.xml">
-      <configuration name="PicassoTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="PicassoTest_within5Results - 2018.08.20 at 18h 07m 46s.xml">
       <configuration name="PicassoTest.within5Results" configurationId="TestNG" />
     </history-entry>
@@ -2441,38 +2426,47 @@
     <history-entry file="PicassoTest_within5Results - 2018.08.20 at 18h 21m 50s.xml">
       <configuration name="PicassoTest.within5Results" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="PicassoTest - 2018.08.21 at 13h 10m 54s.xml">
+      <configuration name="PicassoTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PicassoTest - 2018.08.21 at 13h 20m 22s.xml">
+      <configuration name="PicassoTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PicassoTest - 2018.08.21 at 13h 21m 04s.xml">
+      <configuration name="PicassoTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32741398" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3267974" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32963374" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3263041" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32570806" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32963374" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.23187633" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.65593785" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.23154762" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32995737" />
       <window_info id="Structure" order="1" sideWeight="0.502447" side_tool="true" weight="0.19509594" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39955604" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.6557734" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
     </layout>
   </component>
@@ -2481,14 +2475,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java</url>
-          <line>12</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="47" />
     </breakpoint-manager>
   </component>
@@ -2549,13 +2535,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thoughtworks.xstream/xstream/1.4.10-java7/d8cd39580e16f8639ebc0f077f90a67852ba6d97/xstream-1.4.10-java7-sources.jar!/com/thoughtworks/xstream/XStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-784">
-          <caret line="314" column="13" selection-start-line="314" selection-start-column="13" selection-end-line="314" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thoughtworks.xstream/xstream/1.4.10-java7/d8cd39580e16f8639ebc0f077f90a67852ba6d97/xstream-1.4.10-java7-sources.jar!/com/thoughtworks/xstream/XStream.java" />
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupDeletionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -2724,9 +2704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2748,9 +2725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#170#171#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2768,20 +2742,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java" />
+    <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigationHelper.java" />
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -2824,29 +2786,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-          <folding>
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
+        <state relative-caret-position="1598">
           <caret line="123" selection-start-line="123" selection-end-line="123" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="68">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2856,28 +2805,28 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/internal/TestMethodWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="1666">
           <caret line="113" selection-start-line="113" selection-end-line="113" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="7395">
           <caret line="510" selection-start-line="510" selection-end-line="510" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/SuiteRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="5389">
           <caret line="368" selection-start-line="368" selection-end-line="368" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/SuiteRunnerWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
+        <state relative-caret-position="1275">
           <caret line="84" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="e#2607#2608#0" expanded="true" />
@@ -2887,7 +2836,7 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/TestNG.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="15708">
           <caret line="1036" selection-start-line="1036" selection-end-line="1036" />
           <folding>
             <element signature="e#33705#33706#0" expanded="true" />
@@ -2898,15 +2847,15 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
+        <state relative-caret-position="9333">
           <caret line="592" selection-start-line="592" selection-end-line="592" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="221">
+          <caret line="13" column="72" lean-forward="true" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2915,13 +2864,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SearchManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+        <state relative-caret-position="238">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
         </state>
       </provider>
     </entry>

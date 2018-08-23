@@ -12,14 +12,19 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactDeletionTest extends TestBase {
 
-    @BeforeMethod
-    public void checkPrecondition()
+   /* @BeforeMethod
+    public void checkPreconditionViaGui()
     {
         if (! app.contact().isElementPresent(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img")))
         {
             app.contact().createContact(new ContactData().withName("fordeletion").withEmail("fordeletion").withLastname("fordeletion"));
         }
         app.goTo().MainPage();
+    }*/
+
+    public void checkPreconditionViaDB()
+    {
+
     }
 
     @Test

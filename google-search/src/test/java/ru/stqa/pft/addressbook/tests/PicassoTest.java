@@ -11,8 +11,9 @@ public class PicassoTest extends TestBase{
     @Test
     public void within5Results() {
         boolean within5 = false;
-        ArrayList<String> srchResults = app.search().googleLinksResults("Пикассо");
-       for (int i=0;i<5;i++)
+        app.search().openSearchResults("Пикассо");
+        ArrayList<String> srchResults = app.search().googleLinksResults();
+       for (int i=0;i<4;i++)
        {
            within5 = srchResults.get(i).contains("wikipedia");
            if (within5) break;

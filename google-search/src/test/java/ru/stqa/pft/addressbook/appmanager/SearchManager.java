@@ -14,15 +14,20 @@ public class SearchManager extends HelperBase{
         super(wd);
     }
 
-    public ArrayList<String> googleLinksResults(String searchString){
-        wd.get("https://www.google.com/");
-        type(By.id("lst-ib"),searchString);
-        wd.findElement(By.id("lst-ib")).sendKeys(Keys.ENTER);
+
+
+    public ArrayList<String> googleLinksResults(){
         ArrayList<String> googleResults = new ArrayList<>();
         for (WebElement element : wd.findElements(By.xpath("//cite")))
         {
             googleResults.add(element.getText());
         }
         return googleResults;
+    }
+
+    public void openSearchResults(String searchString) {
+        wd.get("https://www.google.com/");
+        type(By.id("lst-ib"),searchString);
+        wd.findElement(By.id("lst-ib")).sendKeys(Keys.ENTER);
     }
 }

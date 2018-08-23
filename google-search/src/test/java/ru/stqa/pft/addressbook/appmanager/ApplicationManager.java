@@ -25,7 +25,7 @@ public class ApplicationManager {
 
 
     public void init() throws IOException {
-        //System.setProperty("webdriver.gecko.driver", "E:\\\\Tools\\geckodriver\\geckodriver.exe");
+        //System.setProperty("webdriver.gecko.driver", "E:\\Tools\\geckodriver\\geckodriver.exe");
 
         if (browser.equals(FIREFOX))
         {

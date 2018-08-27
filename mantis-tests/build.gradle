@@ -9,19 +9,8 @@ dependencies {
     testCompile 'org.seleniumhq.selenium:selenium-java:3.12.0'
     testCompile 'org.hamcrest:java-hamcrest:2.0.0.0'
     testCompile 'commons-net:commons-net:3.6'
+    testCompile 'org.subethamail:subethasmtp:3.1.7'
+    testCompile 'ru.lanwen.verbalregex:java-verbal-expressions:1.5'
 }
 
-test{
-    useTestNG {
-        suites 'src/test/resources/testng-groups.xml'
-    }
-    if (project.hasProperty("browser")){
-        systemProperty 'browser', "${browser}"
-    }
-
-    if (project.hasProperty("target")){
-        systemProperty 'target', "${target}"
-    }
-
-}
 

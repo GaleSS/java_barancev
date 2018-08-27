@@ -26,6 +26,7 @@ public class ApplicationManager {
     private String browser;
     private RegistrationHelper registrationHelper;
     private FtpHelper ftpHelper;
+    private MailHelper mailHelper;
 
     public void init() throws IOException {
         //System.setProperty("webdriver.gecko.driver", "E:\\\\Tools\\geckodriver\\geckodriver.exe");
@@ -78,5 +79,13 @@ public class ApplicationManager {
             wd.get(properties.getProperty("web.baseUrl"));
         }
         return wd;
+    }
+
+    public MailHelper mail(){
+        if (mailHelper == null)
+        {
+            mailHelper = new MailHelper(this);
+        }
+        return mailHelper;
     }
 }

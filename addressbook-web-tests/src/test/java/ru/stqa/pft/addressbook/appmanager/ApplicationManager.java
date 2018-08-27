@@ -49,7 +49,7 @@ public class ApplicationManager {
         contactHelper = new ContactHelper(wd);
         sessionHelper = new SessionHelper(wd);
         navigationHelper = new NavigationHelper(wd);
-        dBHelper = new DBHelper(wd);
+        dBHelper = new DBHelper();
         sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"), properties.getProperty("web.baseUrl"));
     }
 

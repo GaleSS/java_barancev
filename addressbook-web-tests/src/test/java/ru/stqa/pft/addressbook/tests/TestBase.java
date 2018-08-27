@@ -7,18 +7,19 @@ import ru.stqa.pft.addressbook.appmanager.ApplicationManager;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class TestBase {
 
     protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser",BrowserType.FIREFOX));
 
     @BeforeSuite
-    public void setUp() throws IOException {
+    public void setUp() throws IOException, SQLException {
         app.init();
     }
 
     @AfterSuite
-    public void tearDown() {
+    public void tearDown() throws SQLException {
         app.stop();
     }
 

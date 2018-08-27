@@ -2,33 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60af4db8-6eba-4004-8118-40df8778be65" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_protobuf_protobuf_java_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_8_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/DBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/out/test/classes/ru/stqa/pft/sandbox/CharsQuantity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/out/test/classes/ru/stqa/pft/sandbox/CharsQuantity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/NavigationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/NavigationHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/SessionHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/SessionHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/ContactDeletionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/ContactDeletionTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/TestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/resources/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/resources/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/DBHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/hs_err_pid4528.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/hs_err_pid5252.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/hs_err_pid5416.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/hs_err_pid5428.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/hs_err_pid5572.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/out/test/classes/ru/stqa/pft/addressbook/appmanager/SearchManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/google-search/out/test/classes/ru/stqa/pft/addressbook/appmanager/SearchManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/out/test/classes/ru/stqa/pft/addressbook/tests/PicassoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/google-search/out/test/classes/ru/stqa/pft/addressbook/tests/PicassoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/replay_pid5416.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/replay_pid5428.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SearchManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SearchManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/addressbook-web-tests/build/" />
     <ignored path="$PROJECT_DIR$/Sandbox/.gradle/" />
@@ -91,8 +74,8 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="255">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -100,21 +83,35 @@
       <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-              <folding>
-                <element signature="e#1960#1961#0" expanded="true" />
-                <element signature="e#1996#1997#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="50" column="220" selection-start-line="50" selection-start-column="220" selection-end-line="50" selection-end-column="220" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBHelper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContactCreationTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="33" column="93" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="local.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/DBHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="308">
+              <caret line="38" column="134" selection-start-line="38" selection-start-column="134" selection-end-line="38" selection-end-column="134" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,68 +119,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTest.java">
+      <file leaf-file-name="Date.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Date.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#170#171#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="178" column="18" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FtpHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java">
+      <file leaf-file-name="ContactDeletionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+              <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java">
+      <file leaf-file-name="Contacts.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/Contacts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java">
+      <file leaf-file-name="ContactHelper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="-493">
+              <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java">
+      <file leaf-file-name="ContactDataTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDataTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="153">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -209,11 +185,11 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$/Sandbox" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
-        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
-        <entry key="$PROJECT_DIR$/google-search" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
-        <entry key="$PROJECT_DIR$/mantis-tests" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
-        <entry key="$PROJECT_DIR$/testFilesLogs" value="C:\Users\user\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/Sandbox" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/google-search" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/mantis-tests" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
+        <entry key="$PROJECT_DIR$/testFilesLogs" value="C:\Users\PC\.gradle\wrapper\dists\gradle-4.7-all\4cret0dgl5o3b21weaoncl7ys\gradle-4.7" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -1058,23 +1034,23 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/Sandbox" value="4584392891005" />
+        <entry key="$PROJECT_DIR$/Sandbox" value="4588383809702" />
         <entry key="$PROJECT_DIR$/Sandbox/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/Sandbox/build.gradle" value="3737335831" />
         <entry key="$PROJECT_DIR$/Sandbox/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
-        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="4596592429771" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="4593731957662" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/build.gradle" value="540179310" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
-        <entry key="$PROJECT_DIR$/google-search" value="4597818442206" />
+        <entry key="$PROJECT_DIR$/google-search" value="4604514315009" />
         <entry key="$PROJECT_DIR$/google-search/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/google-search/build.gradle" value="602172534" />
         <entry key="$PROJECT_DIR$/google-search/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
-        <entry key="$PROJECT_DIR$/mantis-tests" value="4596385637359" />
+        <entry key="$PROJECT_DIR$/mantis-tests" value="4604514391863" />
         <entry key="$PROJECT_DIR$/mantis-tests/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/mantis-tests/build.gradle" value="1051678241" />
         <entry key="$PROJECT_DIR$/mantis-tests/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
-        <entry key="$PROJECT_DIR$/testFilesLogs" value="4593274597411" />
+        <entry key="$PROJECT_DIR$/testFilesLogs" value="4604515607379" />
         <entry key="$PROJECT_DIR$/testFilesLogs/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/testFilesLogs/build.gradle" value="1744532254" />
         <entry key="$PROJECT_DIR$/testFilesLogs/gradle/wrapper/gradle-wrapper.properties" value="1168256157" />
@@ -1970,9 +1946,7 @@
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" />
         <option value="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java" />
         <option value="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTest.java" />
@@ -1990,9 +1964,11 @@
         <option value="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SearchManager.java" />
         <option value="$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/tests/PicassoTest.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTest.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/DBHelper.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTest.java" />
       </list>
     </option>
   </component>
@@ -2076,6 +2052,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="addressbook" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
@@ -2180,13 +2163,43 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2198,10 +2211,8 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ru.stqa.pft.mantis.appmanager" />
-      <recent name="ru.stqa.pft.addressbook.appmanager" />
-      <recent name="ru.stqa.pft.addressbook" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Courses\JavaforQABarancevadvanced\Practice\java_barancev\Sandbox\src\test\java\ru\stqa\pft\sandbox" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Courses\JavaforQABarancevadvanced\Practice\java_barancev\mantis-tests\src\test\resources" />
@@ -2214,8 +2225,10 @@
       <recent name="ru.stqa.pft.mantis.tests" />
       <recent name="ru.stqa.pft.addressbook" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Courses\JavaforQABarancevadvanced\Practice\java_barancev\Sandbox\src\test\java\ru\stqa\pft\sandbox" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.stqa.pft.mantis.appmanager" />
+      <recent name="ru.stqa.pft.addressbook.appmanager" />
+      <recent name="ru.stqa.pft.addressbook" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2230,7 +2243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.PicassoTest">
+  <component name="RunManager" selected="TestNG.ContactDeletionTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -2279,19 +2292,19 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="LoginTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests_test" />
+    <configuration name="ContactDeletionTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.LoginTests" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.ContactDeletionTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -2419,18 +2432,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.ContactDataTest" />
-      <item itemvalue="TestNG.LoginTests" />
       <item itemvalue="TestNG.RegistrationTest" />
       <item itemvalue="TestNG.PicassoTest" />
       <item itemvalue="TestNG.PicassoTest.within5Results" />
+      <item itemvalue="TestNG.ContactDeletionTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactDeletionTest" />
+        <item itemvalue="TestNG.ContactDataTest" />
         <item itemvalue="TestNG.PicassoTest" />
         <item itemvalue="TestNG.PicassoTest.within5Results" />
         <item itemvalue="TestNG.RegistrationTest" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.ContactDataTest" />
       </list>
     </recent_temporary>
   </component>
@@ -2448,55 +2461,54 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PicassoTest_within5Results - 2018.08.20 at 18h 19m 04s.xml">
-      <configuration name="PicassoTest.within5Results" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTest - 2018.08.24 at 15h 19m 57s.xml">
+      <configuration name="ContactDeletionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PicassoTest_within5Results - 2018.08.20 at 18h 19m 31s.xml">
-      <configuration name="PicassoTest.within5Results" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTest - 2018.08.24 at 15h 26m 31s.xml">
+      <configuration name="ContactDeletionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PicassoTest_within5Results - 2018.08.20 at 18h 20m 19s.xml">
-      <configuration name="PicassoTest.within5Results" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTest - 2018.08.24 at 15h 26m 56s.xml">
+      <configuration name="ContactDeletionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PicassoTest_within5Results - 2018.08.20 at 18h 21m 00s.xml">
-      <configuration name="PicassoTest.within5Results" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTest - 2018.08.24 at 15h 27m 45s.xml">
+      <configuration name="ContactDeletionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PicassoTest_within5Results - 2018.08.20 at 18h 21m 50s.xml">
-      <configuration name="PicassoTest.within5Results" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTest - 2018.08.24 at 15h 28m 21s.xml">
+      <configuration name="ContactDeletionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PicassoTest - 2018.08.21 at 13h 10m 54s.xml">
-      <configuration name="PicassoTest" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTest - 2018.08.24 at 15h 29m 20s.xml">
+      <configuration name="ContactDeletionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PicassoTest - 2018.08.21 at 13h 20m 22s.xml">
-      <configuration name="PicassoTest" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTest - 2018.08.24 at 15h 29m 40s.xml">
+      <configuration name="ContactDeletionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PicassoTest - 2018.08.21 at 13h 21m 04s.xml">
-      <configuration name="PicassoTest" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTest - 2018.08.24 at 15h 31m 36s.xml">
+      <configuration name="ContactDeletionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PicassoTest - 2018.08.22 at 10h 47m 07s.xml">
-      <configuration name="PicassoTest" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTest - 2018.08.24 at 15h 34m 03s.xml">
+      <configuration name="ContactDeletionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PicassoTest - 2018.08.22 at 17h 19m 29s.xml">
-      <configuration name="PicassoTest" configurationId="TestNG" />
+    <history-entry file="ContactDeletionTest - 2018.08.24 at 15h 34m 37s.xml">
+      <configuration name="ContactDeletionTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3267974" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32963374" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32519424" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32461873" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32963374" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.23667377" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.6557734" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.23630953" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32995737" />
       <window_info id="Structure" order="1" sideWeight="0.502447" side_tool="true" weight="0.19509594" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2509,8 +2521,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.6557734" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3267974" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2518,7 +2530,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="48" />
+      <option name="time" value="51" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -2571,16 +2583,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -2592,13 +2594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
           <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -2644,13 +2639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mantis-tests/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -2688,13 +2676,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java" />
     <entry file="file://$PROJECT_DIR$/google-search/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigationHelper.java" />
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -2734,9 +2715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="84" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="e#2607#2608#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2744,10 +2722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15708">
           <caret line="1036" selection-start-line="1036" selection-end-line="1036" />
-          <folding>
-            <element signature="e#33705#33706#0" expanded="true" />
-            <element signature="e#33740#33741#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2763,9 +2737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2818,63 +2789,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="33" column="93" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-          <folding>
-            <element signature="e#1960#1961#0" expanded="true" />
-            <element signature="e#1996#1997#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -2885,13 +2803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -2899,13 +2810,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTest.java">
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#170#171#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -2916,13 +2824,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="33" column="93" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="178" column="18" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="50" column="220" selection-start-line="50" selection-start-column="220" selection-end-line="50" selection-end-column="220" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/DBHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="308">
+          <caret line="38" column="134" selection-start-line="38" selection-start-column="134" selection-end-line="38" selection-end-column="134" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/Contacts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
         </state>
       </provider>
     </entry>

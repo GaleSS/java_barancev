@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
+import java.sql.SQLException;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -22,9 +24,13 @@ public class ContactDeletionTest extends TestBase {
         app.goTo().MainPage();
     }*/
 
-    public void checkPreconditionViaDB()
-    {
-
+    @BeforeMethod
+    public void checkPreconditionViaDB() throws SQLException {
+        if (!app.db().isContactPresent())
+        {
+            app.db().addContact(new ContactData().withName("fordeletion").withEmail("fordeletion").withLastname("fordeletion"));
+            app.goTo().MainPage();
+        }
     }
 
     @Test

@@ -14,6 +14,7 @@ public class ContactHelper extends HelperBase {
     public ContactHelper(WebDriver wd) {
         super(wd);
     }
+    private Contacts contactsCache = null;
 
     public void submitContactCreation() {
         click(By.name("submit"));
@@ -95,9 +96,6 @@ public class ContactHelper extends HelperBase {
         submitContactCreation();
         contactsCache = null;
     }
-
-
-    private Contacts contactsCache = null;
 
     public Contacts all() {
         if (contactsCache != null) {

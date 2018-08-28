@@ -14,7 +14,6 @@ public class DBHelper {
 
     private Connection conn;
     private Statement st;
-    private Contacts contactsCache;
 
     public DBHelper(Connection conn) throws SQLException {
         this.conn = conn;
@@ -46,32 +45,28 @@ public class DBHelper {
 
     public Contacts all() throws SQLException {
 
-        if (contactsCache != null) {
-            return new Contacts(contactsCache);
-        }
+        Contacts contacts = new Contacts();
+        ResultSet resultSet = st.executeQuery("select * from addressbook where deprecated = \"0000-00-00 00:00:00\"");
 
-        contactsCache = new Contacts();
-        ResultSet contacts = st.executeQuery("select * from addressbook where deprecated = \"0000-00-00 00:00:00\"");
-
-        while (contacts.next()){
-            int id = contacts.getInt("id");
-            String lastName = contacts.getString("lastname");
-            String name = contacts.getString("firstname");
-            String address = contacts.getString("address");
-            String email = contacts.getString("email");
-            String email2 = contacts.getString("email2");
-            String email3 = contacts.getString("email3");
-            String mobile = contacts.getString("mobile");
-            String work = contacts.getString("work");
-            String home = contacts.getString("home");
+        while (resultSet.next()){
+            int id = resultSet.getInt("id");
+            String lastName = resultSet.getString("lastname");
+            String name = resultSet.getString("firstname");
+            String address = resultSet.getString("address");
+            String email = resultSet.getString("email");
+            String email2 = resultSet.getString("email2");
+            String email3 = resultSet.getString("email3");
+            String mobile = resultSet.getString("mobile");
+            String work = resultSet.getString("work");
+            String home = resultSet.getString("home");
             ContactData currentContact = new ContactData().withId(id).withLastname(lastName).withName(name).withAddress(address)
                     .withEmail(email).withEmail2(email2).withEmail3(email3)
                     .withHomePhone(home).withWorkPhone(work).withMobilePhone(mobile);
             currentContact.withAllPhones(ContactData.mergePhones(currentContact)).withAllEmails(ContactData.mergeEmails(currentContact));
 
-            contactsCache.add(currentContact);
+            contacts.add(currentContact);
         }
-        return contactsCache;
+        return contacts;
     }
 
     /*public boolean isGroupPresent(){

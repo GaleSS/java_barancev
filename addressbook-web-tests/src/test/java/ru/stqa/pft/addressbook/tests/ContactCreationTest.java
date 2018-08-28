@@ -12,6 +12,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -47,9 +48,10 @@ public class ContactCreationTest extends TestBase {
 
 
     @Test(dataProvider = "validContactsJson")
-    public void testContactCreation(ContactData createdContact) throws InterruptedException {
-        Contacts before = app.contact().all();
-        File photo = new File("src\\test\\resources\\images.jpg");
+    public void testContactCreation(ContactData createdContact) throws SQLException, InterruptedException {
+        Thread.sleep(1000);
+        Contacts before = app.db().all();
+        //File photo = new File("src\\test\\resources\\images.jpg");
 
         createdContact.withAllEmails(mergeEmails(createdContact));
         createdContact.withAllPhones(mergePhones(createdContact));

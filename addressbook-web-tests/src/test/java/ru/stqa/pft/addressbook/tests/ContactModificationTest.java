@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -35,7 +34,7 @@ public class ContactModificationTest extends TestBase{
     @Test
     public void testContactModification() throws SQLException {
 
-        Contacts before = app.db().all();
+        Contacts before = app.db().allContacts();
         ContactData modifiedContact = before.iterator().next();
         ContactData contact = new ContactData().withId(modifiedContact.getId()).withName("testmodified45").withEmail("testmodified45").withLastname("testmodified45");
         contact.withAllEmails(mergeEmails(contact));

@@ -17,6 +17,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Sandbox_test" options="--add-exports=jdk.scripting.nashorn/jdk.nashorn.internal.runtime=ALL-UNNAMED" />
+      <module name="addressbook-web-tests_test" options="--add-exports=jdk.javaws/com.sun.javaws=ALL-UNNAMED" />
     </option>
   </component>
 </project>

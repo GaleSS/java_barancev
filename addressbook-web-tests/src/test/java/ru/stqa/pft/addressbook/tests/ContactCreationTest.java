@@ -6,10 +6,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
-import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.SQLException;
@@ -50,7 +48,7 @@ public class ContactCreationTest extends TestBase {
     @Test(dataProvider = "validContactsJson")
     public void testContactCreation(ContactData createdContact) throws SQLException, InterruptedException {
         Thread.sleep(1000);
-        Contacts before = app.db().all();
+        Contacts before = app.db().allContacts();
         //File photo = new File("src\\test\\resources\\images.jpg");
 
         createdContact.withAllEmails(mergeEmails(createdContact));

@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -36,7 +35,7 @@ public class ContactDeletionTest extends TestBase {
     @Test
     public void testContactDeletion() throws InterruptedException, SQLException {
 
-        Contacts before = app.db().all();
+        Contacts before = app.db().allContacts();
         ContactData deletedContact = before.iterator().next();
 
         app.contact().delete(deletedContact);

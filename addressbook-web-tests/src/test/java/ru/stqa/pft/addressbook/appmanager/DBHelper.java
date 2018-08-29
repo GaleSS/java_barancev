@@ -32,15 +32,19 @@ public class DBHelper {
     }
 
     public void addContact(ContactData contactData) throws SQLException {
-        ResultSet rs = st.executeQuery("select max(id) from addressbook");
-        rs.next();
-        int maxId = rs.getInt("max(id)");
+        int maxId = getMaxContactId();
         st.execute("INSERT INTO addressbook (domain_id,id,firstname,lastname,email,email2,email3,home,work,mobile,address,deprecated)\n" +
                 String.format("VALUES (0,\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"0000-00-00 00:00:00\")"
                         ,maxId+1,contactData.getName(),contactData.getLastname()
                         ,contactData.getEmail(),contactData.getEmail2(),contactData.getEmail3()
                         ,contactData.getHomePhone(),contactData.getWorkPhone(),contactData.getMobilePhone()
                         ,contactData.getAddress()));
+    }
+
+    public int getMaxContactId() throws SQLException {
+        ResultSet rs = st.executeQuery("select max(id) from addressbook");
+        rs.next();
+        return rs.getInt("max(id)");
     }
 
     public Contacts allContacts() throws SQLException {
@@ -110,12 +114,16 @@ public class DBHelper {
     }
 
     public void addGroup(GroupData groupData) throws SQLException {
-        ResultSet rs = st.executeQuery("select max(group_id) from group_list");
-        rs.next();
-        int maxId = rs.getInt("max(group_id)");
+        int maxId = getMaxGroupId();
         st.execute("INSERT INTO group_list (domain_id,group_id,group_name,group_header, group_footer, deprecated)\n" +
                 String.format("VALUES (0,\"%s\",\"%s\",\"%s\",\"%s\",\"0000-00-00 00:00:00\")"
                         ,maxId+1,groupData.getName(),groupData.getHeader(),groupData.getFooter()));
+    }
+
+    private int getMaxGroupId() throws SQLException {
+        ResultSet rs = st.executeQuery("select max(group_id) from group_list");
+        rs.next();
+        return rs.getInt("max(group_id)");
     }
 
     public Groups allGroups() throws SQLException {
@@ -127,10 +135,16 @@ public class DBHelper {
             String name = resultSet.getString("group_name");
             String header = resultSet.getString("group_header");
             String footer = resultSet.getString("group_footer");
-            GroupData currentGroup = new GroupData().withId(id);
+            GroupData currentGroup = new GroupData().withId(id).withName(name).withHeader(header).withFooter(footer);
 
             groups.add(currentGroup);
         }
         return groups;
+    }
+
+    public void addContactToGroup(ContactData contactFromGroup, GroupData groupWithContact) throws SQLException {
+        st.execute("INSERT INTO address_in_groups (domain_id,id,group_id,deprecated)\n" +
+                String.format("VALUES (0,\"%s\",\"%s\",\"0000-00-00 00:00:00\")"
+                        ,contactFromGroup.getId(),groupWithContact.getId()));
     }
 }

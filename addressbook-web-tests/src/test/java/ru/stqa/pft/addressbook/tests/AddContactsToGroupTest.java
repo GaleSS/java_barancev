@@ -7,6 +7,11 @@ import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertEquals;
 
 public class AddContactsToGroupTest extends TestBase{
 
@@ -18,28 +23,35 @@ public class AddContactsToGroupTest extends TestBase{
         }
     }
 
-
-
     @Test
     public void testAddcontactsToGroup() throws SQLException {
 
         GroupData groupForAdding = app.db().allGroups().iterator().next();
         Contacts before = app.db().allContacts(groupForAdding);
+        ArrayList<ContactData> createdContacts = new ArrayList<>();
 
-        ContactData contact1 = new ContactData().withLastname("lastName1").withName("name1").withAddress("address1")
-                .withEmail("email11").withEmail2("email12").withEmail3("email13")
-                .withHomePhone("434").withWorkPhone("0987").withMobilePhone("2323");
-        contact1.withAllPhones(ContactData.mergePhones(contact1)).withAllEmails(ContactData.mergeEmails(contact1));
+        for (int i = 0; i < 2;i++) {
+            ContactData contact = new ContactData().withLastname("lastName"+i).withName("name"+i).withAddress("address"+i)
+                    .withEmail("email"+i).withEmail2("email"+i).withEmail3("email"+i)
+                    .withHomePhone("434"+i).withWorkPhone("0987"+i).withMobilePhone("2323"+i);
+            contact.withAllPhones(ContactData.mergePhones(contact)).withAllEmails(ContactData.mergeEmails(contact));
 
-        ContactData contact2 = new ContactData().withLastname("lastName2").withName("name2").withAddress("address2")
-                .withEmail("email21").withEmail2("email22").withEmail3("email23")
-                .withHomePhone("2434").withWorkPhone("20987").withMobilePhone("22323");
-        contact1.withAllPhones(ContactData.mergePhones(contact1)).withAllEmails(ContactData.mergeEmails(contact1));
+            app.contact().create(contact);
+            createdContacts.add(contact.withId(app.db().getMaxContactId()));
+        }
 
-        app.contact().create(contact1);
-        app.contact().create(contact2);
+        app.goTo().MainPage();
+        app.contact().addToGroup(groupForAdding, createdContacts);
+        app.goTo().MainPage();
 
-        app.contact().addToGroup(contact1,contact2);
+        app.contact().filterContactsListByGroup(groupForAdding);
+
+        assertEquals(before.size()+2,app.contact().count());
+        Contacts after = app.contact().all();
+
+        assertThat(after,equalTo(
+                before.withAdded(createdContacts.get(0)).withAdded(createdContacts.get(1))));
+
 
 
     }

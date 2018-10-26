@@ -16,6 +16,7 @@ import static org.openqa.selenium.remote.BrowserType.*;
 
 public class ApplicationManager {
 
+
     public ApplicationManager(String browser) {
         this.browser = browser;
         properties = new Properties();
@@ -26,6 +27,7 @@ public class ApplicationManager {
     private String browser;
     private RegistrationHelper registrationHelper;
     private FtpHelper ftpHelper;
+    private SoapHelper soapHelper;
 
     public void init() throws IOException {
         //System.setProperty("webdriver.gecko.driver", "E:\\\\Tools\\geckodriver\\geckodriver.exe");
@@ -78,5 +80,12 @@ public class ApplicationManager {
             wd.get(properties.getProperty("web.baseUrl"));
         }
         return wd;
+    }
+
+    public SoapHelper soap(){
+        if (soapHelper == null){
+            soapHelper = new SoapHelper(this);
+        }
+        return soapHelper;
     }
 }

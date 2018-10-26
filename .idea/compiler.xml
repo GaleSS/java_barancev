@@ -8,8 +8,12 @@
       <module name="google-search_test" target="1.10" />
       <module name="mantis-tests_main" target="1.10" />
       <module name="mantis-tests_test" target="1.10" />
+      <module name="rest-sample_main" target="1.10" />
+      <module name="rest-sample_test" target="1.10" />
       <module name="Sandbox_main" target="1.10" />
       <module name="Sandbox_test" target="1.10" />
+      <module name="soap-sample_main" target="1.10" />
+      <module name="soap-sample_test" target="1.10" />
       <module name="testFilesLogs_main" target="1.10" />
       <module name="testFilesLogs_test" target="1.10" />
     </bytecodeTargetLevel>
